@@ -5,11 +5,11 @@
 
 // ********RoostGPT********
 // Importing the necessary modules
-const db = require('./app');
-const { describe, expect, test, jest } = require('@jest/globals');
+const db = require('../app');
+const { describe, expect, test } = require('@jest/globals');
 
 // Mocking the db.connect function
-jest.mock('./app', () => ({
+jest.mock('../app', () => ({
   connect: jest.fn(),
 }));
 
